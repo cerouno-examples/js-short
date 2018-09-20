@@ -8,7 +8,7 @@
   "scripts": {
     "read": "NODE_PATH=src node index.js",
     "concurrent": "NODE_PATH=src node index.js concurrent",
-    "server": "NODE_PATH=src node index.js server",
+    "server": "NODE_PATH=src nodemon index.js server",
     "client": "NODE_PATH=src node index.js client"
   },
   "repository": {

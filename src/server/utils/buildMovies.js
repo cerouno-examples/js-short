@@ -10,20 +10,22 @@ const getRTScore = (movieName) => {
     const movie = response.data.movies[0];
     if (movie) {
       return movie.meterScore
-    } else {
-      return null;
     }
+    return null;
   })
 }
 
-const buildMovie = (movieName) => {
+export const buildMovie = (name) => {
   return getRTScore(movieName).then((score) => {
-    return { name: movieName, score: score };
+    if (score){
+      return { name, score };
+    }
+    return {};
   });
 }
 
-const movieNames = [
-  "Batman Begins",
-  "The Dark Knight",
-  "The Dark Knight Rises"
-];
+export const buildMovies = (movies) => {
+  return Promise.all(movies.map((name) => buildMovie(name)));
+}
+
+export default buildMovies;

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container" style='max-width:600px;'>
+      <h1>Peliculas</h1>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Pelicula</th>
+            <th scope="col">Rotten Tomatoes Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each movies}}
+            <tr>
+              <td>{{this.name}}</td>
+              <td>{{this.score}}%</td>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
