@@ -35,9 +35,8 @@ En el taller platicaremos de algunos casos de uso interesantes para trabajar con
 ## Herramientas y conceptos
 
 * Servidor Web con [Express](https://expressjs.com/)
+* React con [Create React App](https://github.com/facebook/create-react-app)
 * Templates Html/Javascript con [Handlebars](https://handlebarsjs.com/)
-* Requests HTTP con [Axios](https://github.com/axios/axios)
-* Pruebas de Requests HTTP con [Postman](https://www.getpostman.com/)
 * Uso de ES6 a través de [Babel](https://babeljs.io/)
 
 ## Bonus

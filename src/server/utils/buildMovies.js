@@ -16,7 +16,7 @@ const getRTScore = (movieName) => {
 }
 
 export const buildMovie = (name) => {
-  return getRTScore(movieName).then((score) => {
+  return getRTScore(name).then((score) => {
     if (score){
       return { name, score };
     }

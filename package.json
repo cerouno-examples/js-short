@@ -9,7 +9,8 @@
     "read": "NODE_PATH=src node index.js",
     "concurrent": "NODE_PATH=src node index.js concurrent",
     "server": "NODE_PATH=src nodemon index.js server",
-    "client": "NODE_PATH=src node index.js client"
+    "client": "(cd src/client/movies && npm run start)",
+    "client_server": "NODE_PATH=src node index.js client_server"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
     "hbs": "^4.0.1"
   }
