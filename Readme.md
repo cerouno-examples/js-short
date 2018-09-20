@@ -28,10 +28,6 @@ En el taller platicaremos de algunos casos de uso interesantes para trabajar con
 
 `npm run client`
 
-## Hackear código
-
-`npm run hack`
-
 ## Herramientas y conceptos
 
 * Servidor Web con [Express](https://expressjs.com/)
