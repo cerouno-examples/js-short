@@ -20,7 +20,7 @@ En el taller platicaremos de algunos casos de uso interesantes para trabajar con
 
 `npm run read`
 
-## Correr los ejemplos
+## Correr los ejemplos
 
 `npm run concurrent`
 
